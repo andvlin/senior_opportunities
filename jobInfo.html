@@ -4,9 +4,12 @@
   <head>
     <meta charset="utf-8">
     <title>XXX Postion @ XXX Company</title>
-    <!--
     <link rel="stylesheet" type="text/css" href="css/jobInfo.css">
-    -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--jcarousel-->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/moreInfo.js"></script>
   </head>
 
   <body>
@@ -16,18 +19,55 @@
         <h1 class="text-center">Position Title @ XXX Company</h1>
         <hr/>
       </div>
-      <br>
-
       <hr/>
-      <!--Contact Employer!-->
-      <div class="button">
-        <a button class="btn btn-primary btn-large" href = "jobContact.html">Contact the Employer!</button>
+      
+      <!--JCarousel Modified
+      Source Code: https://github.com/jsor/jcarousel/tree/master/examples/basic-->
+      <div class="jcarousel-wrapper">
+        <div class="jcarousel">
+          <ul>
+            <li><img src="images/cute cat 1.jpg" width="600" height="400" alt=""></li>
+            <li><img src="images/cute cat 2.jpg" width="600" height="400" alt=""></li>
+            <li><img src="https://colonyofcommodus.files.wordpress.com/2012/07/1341619539905.jpg" width="600" height="400" alt=""></li>
+            <li><img src="images/cute cat 3.jpg" width="600" height="400" alt=""></li>
+            <li><img src="images/cute cat 4.jpg" width="600" height="400" alt=""></li>
+            <li><img src="images/cute cat 5.jpg" width="600" height="400" alt=""></li>
+          </ul>
+        </div>
+
+        <p class="photo-credits">
+          Photos by <a href="https://unsplash.com/@paul_">Paul on Unsplash</a>
+        </p>
+
+        <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+        <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+        <p class="jcarousel-pagination">
+
+        </p>
       </div>
+      <hr/>
+
+      <!--Info Part-->
+      <div class= "w3-card w3-dark-gray w3-round w3-padding-large" style="max-width:500px">
+        <h2>Organization Name</h3>
+        <h6>Contact / Address Info</h6>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in sem sit amet dui ornare hendrerit id ac mauris. Fusce finibus nulla ac mi aliquet varius. Aliquam mauris eros, ullamcorper in felis ut, mollis suscipit dui. Nunc a eros eu ipsum cursus malesuada. Maecenas ullamcorper venenatis nisi in auctor. Fusce ut egestas nibh, nec tincidunt purus. Aliquam sit amet lorem vestibulum, suscipit ligula sed, rutrum mi. Aliquam commodo ex sed erat tincidunt, ut convallis risus cursus. In blandit leo dui, sed euismod felis euismod ut. Ut ante elit, vulputate vitae elementum non, cursus et orci. Mauris pellentesque viverra neque sit amet convallis.
+          <br>
+
+          Vivamus tristique, tortor eget consectetur congue, lacus tellus imperdiet leo, mollis viverra metus velit eget ligula. Donec scelerisque pretium enim, ac fringilla mi rhoncus a. Nullam eget porttitor velit. Aliquam convallis lorem in pharetra sollicitudin. Aenean pharetra a arcu quis tincidunt. Ut condimentum maximus sodales. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        </p>
+      </div>
+      <hr/>
+
+      <!--Contact Employer!-->
+      <div class="links">
+        <a class="contact" href = "jobContact.html">Contact the Employer!</a>
       <br>
 
       <!--Back to previous Job Listing!-->
-      <div class="button">
-        <a button class="btn btn-outline-primary btn-large" href="jobResults.html">Back!</button>
+        <a class="back" href="jobResults.html">Back!</a>
       </div>
       <br>
 

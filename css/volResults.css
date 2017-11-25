@@ -1,3 +1,50 @@
+.container {
+	border: 0;
+	width: 70%;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	position: relative;
+}
+
+.container p{
+  text-align: left;
+}
+
+.container img{
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.container h4 {
+	position: relative;
+	top: 40px;
+	color: black;
+}
+
+/*.container a {
+	position: absolute;
+}*/
+
+.title {
+	display: inline;
+	width: 100%;
+	font-weight: bold;
+	font-style: normal;
+	font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+	color: #00000;
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+	letter-spacing: 2px;
+	font-size: 45px;
+	position: relative;
+	top: 25px;
+}
+
 /* Dropdown Button */
 .dropbtn {
     color: black;

@@ -1,16 +1,69 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Submit a Listing</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/employerSubmit.css">
+
 </head>
 <body>
-  <h1>Employers: Submit a Listing</h1>
-  <ul style="list-style: none;">
-    <li><a class="button" href="index.html" alt="Submit">
-    Submit</a></li>
-    <li><a class="button" href="index.html" alt="Home">
-    Home</a></li>
-  </ul>
+  <div class="container">
+  <h1>Submit a Listing</h1>
+  <form action="index.html" id="listingForm">
+    <label>What are you submitting?</label>
+    <div class="errRow"><p hidden class="errText" id="typeHelp">Please select an event type.</p></div>
+    <div class="form-row justify-content-around">
+    <div class="form-check form-check-inline">
+      <label class="form-check-label">
+        <input class="form-check-input" name="listingType" id="volType" type="radio">Volunteer Event
+      </label>
+    </div>
+    <div class="form-check form-check-inline">
+      <label class="form-check-label">
+        <input class="form-check-input" name="listingType" id="jobType" type="radio">Job Listing
+      </label>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="listingOrg">Company / Organization</label>
+    <div class="errRow"><p hidden class="errText" id="orgHelp">Please enter your name if you are not posting this for an organization.</p></div>
+    <input type="text" class="form-control" id="listingOrg">
+  </div>
+  <div class="form-group">
+    <label for="listingEmail">Email</label>
+    <div class="errRow"><p hidden class="errText" id="emailHelp">Please enter a valid e-mail to receive notifications from interested applicants.</p></div>
+    <input type="text" class="form-control" id="listingEmail">
+  </div>
+  <div class="form-group">
+    <label for="listingTitle">Title</label>
+    <div class="errRow"><p hidden class="errText" id="titleHelp">Please enter a title for this listing.</p></div>
+    <input type="text" class="form-control" id="listingTitle">
+  </div>
+  <div class="form-group">
+    <label for="listingInfo">Info</label>
+    <div class="errRow"><p hidden class="errText" id="infoHelp">Please share some information about your listing.</p></div>
+    <textarea class="form-control" id="listingInfo" rows="5"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="listingPics">Upload pictures</label>
+    <input type="file" class="form-control-file" id="listingPics" multiple>
+  </div>
+  <div class="form-row justify-content-around">
+        <div class="col text-center">
+        <button type="button" class="btn btn-info btn-large" id="homeBtn">Home</button>
+      </div>
+        <div class="col text-center">
+        <button type="reset" class="btn btn-outline-primary btn-large" id="clearBtn">Clear</button>
+        </div>
+        <div class="col text-center">
+        <button type="button" class="btn btn-primary btn-large" id="submitBtn">Submit</button>
+        </div>
+      </div>
+  </form>
+</div>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/employerSubmit.js"></script>
 </body>
 </html>

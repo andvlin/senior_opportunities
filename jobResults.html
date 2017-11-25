@@ -4,53 +4,109 @@
   <head>
     <meta charset="utf-8">
     <title>Job Listings</title>
-    <link rel="stylesheet" type="text/css" href="css/jobResults.css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/volResults.css">
   </head>
 
   <body>
     <center>
-      <div class="header" id ="Listings">
-        <br>
-        <h1 class="text-center">Job Results!</h1>
-        <hr/>
+      <div class="container">
+        <!-- Header-->
+        <h1 class ="title">Job Opportunities</h1>
+        <h4> Showing 3 Results </h4>
       </div>
       <br>
     </center>
 
   <!--Sort by menu
       Taken from w3schools example of how to do drop down menu
-      https://www.w3schools.com/howto/howto_js_dropdown.asp-->
+      https://www.w3schools.com/howto/howto_js_dropdown.asp
     <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">Sort By</button>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="#">Date</a>
-        <a href="#">A-Z</a>
-        <a href="#">Distance</a>
-      </div>
+        <button onclick="myFunction()" class="dropbtn">Sort By</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">Date</a>
+          <a href="#">A-Z</a>
+          <a href="#">Distance</a>
+        </div>
     </div>
-
+  -->
     <center>
       <hr/>
-      <!--More Info -->
-      <div class="button">
-        <a button class="btn btn-primary btn-large" href = "jobInfo.html">More Info</button>
-      </div>
-      <br>
+       <div class = "container">
+           <img src="images/solid-silver-gray-fabric_medium.jpg" width="200px"
+             height="200px" alt="Image Placeholder">
+           <p>
+             <h3> Welcome Desk Attendant </h3>
+            Welcome Desk Attendants are the face of the San Diego Chinese Historical Museum as the first point of
+            contact for visitors from all over the world. We have three gallery spaces that host rotating art, culture,
+            and historical exhibits that focus on China and Chinese America. Attendants will be trained in greeting
+            visitors, cash and credit card handling for admission and gift shop sales. Attendants will also facilitate
+            an enjoyable visitor experience to all guests to the Museum.
+              <!--More Info -->
+                <div class="button">
+                  <a button class="btn btn-outline-primary btn-large" href="list/job1.html">More Info</a>
+                <!--Contact -->
+                  <a button class="btn btn-outline-primary btn-large" href="cont/job1.html">Contact Organization</a>
+                  <a button class="btn btn-outline-primary btn-large" href="" id="saveJob1Btn">Save</a>
+                </div>
+          </p>
+          <br>
+       </div>
 
-      <!--Contact -->
-      <div class="button">
-        <a button class="btn btn-primary btn-large" href = "jobContact.html">Contact</button>
-      </div>
-      <br>
+       <hr/>
+       <div class = "container">
+           <img src="images/solid-silver-gray-fabric_medium.jpg" width="200px"
+             height="200px" alt="Image Placeholder">
+           <p>
+             <h3> Lucky Mart Cashier </h3>
+             Do you enjoy leading others by providing an exemplary example and serving as a mentor? Does overseeing a fast paced
+             team in a fast paced environment sound exciting? Do you have a passion for delivering an extraordinary customer service
+             experience while working in a friendly environment? If the thought of helping people make healthy choices in one of the
+             fastest growing retailers is up your alley – then we need YOU to join our winning team at Lucky Mart as a
+             Head Cashier!
+              <!--More Info -->
+                <div class="button">
+                  <a button class="btn btn-outline-primary btn-large" href="list/job2.html">More Info</a>
+                <!--Contact -->
+                  <a button class="btn btn-outline-primary btn-large" href="cont/job2.html">Contact Organization</a>
+                  <a button class="btn btn-outline-primary btn-large" href="" id="saveJob2Btn">Save</a>
+                </div>
+          </p>
+          <br>
+       </div>
+
+       <hr/>
+       <div class = "container">
+           <img src="images/solid-silver-gray-fabric_medium.jpg" width="200px"
+             height="200px" alt="Image Placeholder">
+           <p>
+             <h3> Professional Pet Sitter/Dog walker </h3>
+             Provide the highest quality care for our clients' pets. We have established an extremely prominent and revered place in
+             the community as professional care givers to pets and our mission is to always maintain our high standards and excellent
+             reputation. We are caring for peoples' pets which are their furry children. They adore their pets and expect us to take
+             care of them with the same sense of responsibility and commitment that they do. As out company is very well-known, it has
+             grown and there is much demand for our services. We need more wonderful care givers to help us do our jobs well.
+              <!--More Info -->
+                <div class="button">
+                  <a button class="btn btn-outline-primary btn-large" href="list/job3.html">More Info</a>
+                <!--Contact -->
+                  <a button class="btn btn-outline-primary btn-large" href="cont/job3.html">Contact Organization</a>
+                  <a button class="btn btn-outline-primary btn-large" href="" id="saveJob3Btn">Save</a>
+                </div>
+          </p>
+          <br>
+       </div>
 
       <!--Back to jobSearch -->
+    <hr/>
       <div class="button">
-        <a button class="btn btn-outline-primary btn-large" href="JobSearch.html">Back</button>
+        <a button class="btn btn-outline-primary btn-large" href="JobSearch.html">Back to Search</a>
       </div>
       <br>
 
     </center>
-    <script type="text/javascript" src="js/jobResults.js"></script>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/jobResults.js"></script>
 
   </body>
 </html>

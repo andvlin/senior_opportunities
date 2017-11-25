@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+}
+
+#homeBtn {
+  border-radius: 3px;
+  background-color: #0099ff;
+  border: none;
+  color: white;
+  transition-duration: 0.4s;
+  padding: 15px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  width: 150px;
+}
+
+#homeBtn:hover {
+  text-decoration: none;
+}
+
+.header {
+  text-align: center;
+}
+
+.savedListing {
+  text-align: center;
+}

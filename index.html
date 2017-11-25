@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Senior Opportunities</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/index.css" rel="stylesheet" type="text/css">
@@ -12,31 +12,41 @@
 
 <body>
   <div class ="container">
-    <!-- Header and main image -->
-    <h1 class ="title"> Senior Opportunities </h1>
-    <a class="button" id="signUpBtn" href="signUp.html" alt="Sign Up">
-      Sign Up</a>
-      <a class="button" id="loginBtn" href="login.html" alt="Login">
-      Login</a>
-    <p>
-        <h4> Giving senior citizens more ways to give back. </h4>
-    </p>
+    <div class="header">
+      <h1> Senior Opportunities</h1>
+      <p class="loggedIn" id="helloUser">Hello</p>
+      <div class="row userContainer">
+      <div class="col loggedIn">
+        <a class="button" id="savedBtn" href="savedListings.html" alt="Saved Listings">Saved Listings</a>
+      </div>
+      <div class="col loggedOut">
+        <a class="button" id="signUpBtn" href="signUp.html" alt="Sign Up">Sign Up</a>
+      </div>
+      <div class="col loggedIn">
+        <a class="button" id="logoutBtn" href="index.html" alt="Log Out">Log Out</a>
+      </div>
+      <div class="col loggedOut">
+        <a class="button" id="loginBtn" href="login.html" alt="Login">Login</a>
+      </div>
+      </div>
+      <p><h4>Giving senior citizens more ways to give back.</h4></p>
+    </div>
+    <div class="row searchContainer">
+      <div class="col">
+      <a class="button" href="volunteerSearch.html" alt="Volunteer Opportunties">Volunteer Opportuntities </a>
+      </div>
+      <div class="col">
+        <a class="button" href="JobSearch.html" alt="Job Opportunities">Job Opportunities </a>
+      </div>
+    </div>
+          <div class="row employerContainer">
+        <div class="col">
+          <a class="button" id="employerBtn" href="employerSubmit.html" alt="Employer? Click here.">Employer? Click here.</a>
+        </div>
+      </div>
   </div>
-  <div class="oppContainer">
-    <!-- Navigation links -->
-    <center>
-      <a class="button" href="volunteerSearch.html" alt="Volunteer Opportunties">
-      Volunteer Opportuntities </a></li>
-      <a class="button" href="JobSearch.html" alt="Job Opportunities">
-       Job Opportunities </a></li>
-    </center>
-  </div>
-  <div class="employeerContainer">
-    <center>
-      <a class="button" id="employerBtn" href="employerSubmit.html" alt="Employer? Click here.">
-        Employer?<br/>Click here.</a>
-    </center>
-  </div>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
 

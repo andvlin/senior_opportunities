@@ -3,16 +3,46 @@
 <head>
   <title>Login</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/login.css">  
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
 </head>
 <body>
-  <h1>Login</h1>
-  <ul style="list-style: none;">
-    <li><a class="button" href="index.html" alt="Sign In">
-    Login</a></li>
-    <li><a class="button" href="signUp.html" alt="Sign Up">
-    Sign Up</a></li>
-    <li><a class="button" href="index.html" alt="Home">
-    Home</a></li>
-  </ul>
+  <div class="container">
+    <div class="row header">
+      <div class="col">
+      <h1>Login</h1>
+    </div>
+    <div class="col">
+      <a class="button" href="signUp.html" id="signUpBtn">Sign up</a>
+      <a href="employerSubmit.html" id="employerBtn">Employer? Click here.</a>
+    </div>
+  </div>
+    <form action="index.html" id="loginForm">
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" class="form-control" maxlength="256" id="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" maxlength="120" id="pass">
+        <a href="forgotPass.html">Forgot your password? Click here.</a>
+      </div>
+      <p hidden id="accHelp">Incorrect email and/or password.</p>
+      <br>
+      <div class="form-row justify-content-around">
+        <div class="col text-center">
+        <button type="button" class="btn btn-info btn-large" id="homeBtn">Home</button>
+      </div>
+        <div class="col text-center">
+        <button type="reset" class="btn btn-outline-primary btn-large" id="clearBtn">Clear</button>
+        </div>
+        <div class="col text-center">
+        <button type="button" class="btn btn-primary btn-large" id="submitBtn">Login</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
 </body>
 </html>

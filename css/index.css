@@ -1,97 +1,151 @@
-@charset "UTF-8";
+html {
+  background: url(../images/homepage_v2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+}
 
 body {
-	background-image: url("../images/home_image.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
+	background: transparent;
+  position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
 }
 
-.container {
-	/*
-	border: 0;
-	width: 100%;
-	margin-left: 0;
-	margin-right: 0;
-	padding-left: 0px;
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	*/
+.header {
 	position: relative;
+	margin-top: 5%;
+  margin-left: 1%;
 }
 
-.container h4 {
-	position: relative;
-	top: 40px;
-	color: black;
+.header p {
+  text-align: left;
+  font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+  color: #ffffff;
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                0px -5px 35px rgba(255,255,255,0.3);
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
-.container a {
-	position: absolute;
+.loggedIn {
+  position: relative;
+  margin-right: 0%;
 }
 
-.title {
-	display: inline;
-	width: 100%;
+.header h1 {
+	display: table;
 	font-weight: bold;
 	font-style: normal;
 	font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
-	color: #0098ff;
+	color: #ffffff;
   text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-                 0px -5px 35px rgba(255,255,255,0.3);
+                0px -5px 35px rgba(255,255,255,0.3);
 	letter-spacing: 2px;
-	font-size: 85px;
-	position: relative;
-	top: 25px;
+}
+.header h4 {
+  margin-top: 10%;
+	color: #ffffff;
+	text-shadow: 1px 0px 2px rgba(0, 0, 0, 1);
+}
+
+.userContainer {
+  margin-top: 10%;
+  width: 100%;
+  text-align: center;
 }
 
 .button {
-  border-radius: 0;
+  border-radius: 3px;
 	background-color: #0099ff;
 	border: none;
 	color: white;
 	transition-duration: 0.4s;
-	padding: 15px 32px;
+	padding: 15px 10px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
+	font-size: 18px;
+	width: 150px;
 }
 
 .button:hover {
-    background-color: #d3d3d3;
-    color: black;
-		text-decoration: none;
+  text-decoration: none;
 }
 
-.oppContainer {
+.searchContainer {
 	position: relative;
-	top: 100px;
+	margin-top: 10%;
+  text-align: center;
+}
+
+.searchContainer a:hover {
+  background-color: white;
+  color: #0099ff;
+}
+
+.employerContainer {
+	margin-top: 8%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+#savedBtn {
+  width: 100px;
+  padding: 10px 10px;
+  background-color: #0099ff;
+}
+
+#savedBtn:hover {
+  background-color: white;
+  color: #0099ff;
 }
 
 #signUpBtn {
-	width: 150px;
-	background-color: #bd01bd;
-	top: 20px;
-	right: 50px;
+	width: 100px;
+  padding: 10px 10px;
+	background-color: #0099ff;
+}
+
+#signUpBtn:hover {
+  background-color: white;
+  color: #0099ff;
 }
 
 #loginBtn {
-	width: 150px;
-	background-color: #2ad200;
-	top: 100px;
-	right: 50px;
+	width: 100px;
+	padding: 10px 10px;
+	background-color: #0099ff;
 }
+
+#loginBtn:hover {
+  background-color: white;
+  color: #0099ff;
+}
+
+#logoutBtn {
+  width: 100px;
+  padding: 10px 10px;
+  background-color: #0099ff;
+}
+
+#logoutBtn:hover {
+  background-color: white;
+  color: #0099ff;
+}
+
 
 #employerBtn {
-	background-color: #00da9e;
-	position: absolute;
-	top: 500px;
-	right: 590px;
-	padding: 50px 80px;
+	padding: 25px 25px;
+  background-color: #00da9e;
 }
 
-
-
-
-
+#employerBtn:hover {
+  background-color: white;
+  color: #2ad200;
+}

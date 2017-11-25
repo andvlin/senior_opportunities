@@ -3,54 +3,107 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Job Listings</title>
+    <title>Volunteer Opportunities</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/volResults.css">
   </head>
 
   <body>
     <center>
-      <div class="header" id ="Listings">
-        <br>
-        <h1 class="text-center">Volunteer Opportunities Results!</h1>
-        <hr/>
+      <div class="container">
+        <!-- Header-->
+        <h1 class ="title"> Volunteer Opportunities </h1>
+        <h4> Showing 5 Results </h4>
       </div>
       <br>
     </center>
 
   <!--Sort by menu
       Taken from w3schools example of how to do drop down menu
-      https://www.w3schools.com/howto/howto_js_dropdown.asp-->
+      https://www.w3schools.com/howto/howto_js_dropdown.asp
     <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">Sort By</button>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="#">Date</a>
-        <a href="#">A-Z</a>
-        <a href="#">Distance</a>
-      </div>
+        <button onclick="myFunction()" class="dropbtn">Sort By</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">Date</a>
+          <a href="#">A-Z</a>
+          <a href="#">Distance</a>
+        </div>
     </div>
+    -->
 
     <center>
       <hr/>
-      <!--More Info -->
-      <div class="button">
-        <a button class="btn btn-primary btn-large" href = "volInfo.html">More Info</button>
-      </div>
-      <br>
+       <div class = "container">
+           <img src="images/art.jpg" width="200px"
+             height="200px" alt="Image Placeholder">
+           <p>
+             <h3> Art Program for Homeless Teens/ Youths Thursday Afternoons </h3>
+             Doors of Change is a nonprofit organization that services and supports homeless youths ages 12-24.
+             We offer a safe and supportive environment to come and create art through our weekly Thursday Taking Art
+             to the Streets (TATS) program.
+              <!--More Info -->
+                <div class="button">
+                  <a button class="btn btn-outline-primary btn-large" href="list/art.html">More Info</a>
+                <!--Contact -->
+                  <a button class="btn btn-outline-primary btn-large" href="cont/artCont.html">Contact Organization</a>
+                  <a button class="btn btn-outline-primary btn-large" href="" id="saveArtBtn">Save</a>
+                </div>
+          </p>
+          <br>
+       </div>
 
-      <!--Contact -->
-      <div class="button">
-        <a button class="btn btn-primary btn-large" href = "volContact.html">Contact Organization</button>
-      </div>
-      <br>
+       <hr/>
 
-      <!--Back to jobSearch -->
+       <div class = "container">
+           <img src="images/cat.png" width="200px"
+             height="200px" alt="Image Placeholder">
+           <p>
+             <h3> Cat Shelter Care </h3>
+                Do you like cats? Do you have time to help out friends in need? If so, we have an opportunity for you!
+                Come to the Humane Pet Society to help out furry friends in need. We are looking for someone who can care
+                for cats as they prep themselves up for a permanent home.
+              <!--More Info -->
+                <div class="button">
+                  <a button class="btn btn-outline-primary btn-large" href="list/cat.html">More Info</a>
+                <!--Contact -->
+                  <a button class="btn btn-outline-primary btn-large" href="cont/catCont.html">Contact Organization</a>
+                  <a button class="btn btn-outline-primary btn-large" href="" id="saveCatBtn">Save</a>
+                </div>
+          </p>
+          <br>
+       </div>
+
+       <br>
+       <hr/>
+       <div class = "container">
+           <img src="images/rabbit.jpg" width="200px"
+             height="200px" alt="Image Placeholder">
+           <p>
+             <h3> Adoption Event Coordinator - Offsite Events </h3>
+             Here's an opportunity for an individual or group (i.e. community service sorority or fraternity) looking
+             for management experience that will look GREAT on a resume' or just someone who wants a great volunteer project!
+             San Diego House Rabbit Society is looking for a group of volunteers to organize off-site shelter rabbit adoption
+             events at pet stores and other locations (book stores, shopping centers, libraries, etc.).
+              <!--More Info -->
+                <div class="button">
+                  <a button class="btn btn-outline-primary btn-large" href="list/rabbit.html">More Info</a>
+                <!--Contact -->
+                  <a button class="btn btn-outline-primary btn-large" href="cont/rabCont.html">Contact Organization</a>
+                  <a button class="btn btn-outline-primary btn-large" href="" id="saveRabBtn">Save</a>
+                </div>
+          </p>
+          <br>
+       </div>
+
+      <!--Back to volunteerSearch -->
+    <hr/>
       <div class="button">
-        <a button class="btn btn-outline-primary btn-large" href="volunteerOpp.html">Back to Search</button>
+        <a button class="btn btn-outline-primary btn-large" href="volunteerSearch.html">Back to Search</a>
       </div>
       <br>
 
     </center>
-    <script type="text/javascript" src="js/jobResults.js"></script>
-
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/volResults.js"></script>
   </body>
 </html>

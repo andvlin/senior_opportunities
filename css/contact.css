@@ -1,0 +1,42 @@
+.header {
+  background: rgb(238, 180, 34);
+  font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+  color: white;
+}
+
+.submit {
+  margin-top: 20px;
+  line-height: 70px;
+  padding: 10px 10px;
+  background: rgb(238, 180, 34); /*yellow*/
+  font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+  color: white;
+  border: none;
+  text-decoration: none;
+}
+
+/*different color scheme for volunterring contact*/
+#vol, #volHeader {
+  background:  rgb(72, 118, 255);
+}
+#vol:hover{
+  background: black;
+}
+
+.back {
+  margin-top: 20px;
+  line-height: 70px;
+  padding: 10px 10px;
+  background:  gray;
+  font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+  color: white;
+  border: none;
+  text-decoration: none;}
+
+.submit:hover {
+  background: black;
+}
+
+.back:hover{
+  background: black;
+}

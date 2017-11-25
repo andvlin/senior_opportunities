@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Forgot Password</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/forgotPass.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Forgot password?</h1>
+      <label>Reset your password or</label>
+        <a href="login.html">go back to login.</a>
+    </div>
+    <form action="index.html" id="forgotPassForm">
+      <div class="form-group">
+        <label for="email">Send a link to your email for resetting your password.</label>
+        <input type="email" class="form-control" placeholder="Email" maxlength="256" id="email">
+      </div>
+       <p hidden id="accHelp">Please enter the email you used to create your account.</p>
+      <br>
+      <div class="form-row justify-content-around">
+        <div class="col text-center">
+        <button type="button" class="btn btn-info btn-large" id="homeBtn">Home</button>
+        </div>
+        <div class="col text-center">
+        <button type="button" class="btn btn-primary btn-large" id="submitBtn">Send</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/forgotPass.js"></script>
+</body>
+</html>
