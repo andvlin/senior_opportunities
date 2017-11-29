@@ -1,10 +1,20 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109872814-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109872814-1');
+  </script>
+  
   <title>Sign Up</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="css/signUp.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <div class="container">
@@ -19,7 +29,7 @@
         <div class="col">
           <input type="text" class="form-control" id="fName" placeholder="First name" aria-describedby="requiredText" maxlength="35" required>
           <small id="requiredText" class="text-muted">required</small>
-          <p hidden class="errText" id="nameHelp">Please enter your first and last name.</p> 
+          <p hidden class="errText" id="nameHelp">Please enter your first and last name.</p>
         </div>
         <div class="col">
           <input type="text" class="form-control" id="lName" placeholder="Last name" maxlength="35">
