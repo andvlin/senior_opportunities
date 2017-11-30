@@ -3,6 +3,11 @@
   font-size: 15px;
 }
 
+.accBtn {
+  color: blue;
+  font-size: 15px;
+}
+
 .container {
 	border: 0;
 	width: 70%;

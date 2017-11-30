@@ -47,7 +47,7 @@
                 <div class="button">
                   <a button class="btn btn-outline-primary btn-large" href="list/art.html">More Info</a>
                 <!--Contact -->
-                  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#contactModalArt">Contact Organization</button>
+                  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#contactModalArt" id="contArtBtn">Contact Organization</button>
                   <div class="modal fade" id="contactModalArt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
@@ -83,7 +83,7 @@
                      </div>
                     </div>
                   </div>
-                  <a button class="btn btn-outline-primary btn-large" href="" id="saveArtBtn">Save</a>
+                  <button type="button" class="btn btn-outline-primary btn-large" id="saveArtBtn">Save</a>
                 </div>
           </p>
           <br>
@@ -139,7 +139,7 @@
                      </div>
                     </div>
                   </div>
-                  <a button class="btn btn-outline-primary btn-large" href="" id="saveCatBtn">Save</a>
+                  <button type="button" class="btn btn-outline-primary btn-large" href="" id="saveCatBtn">Save</a>
                 </div>
           </p>
           <br>
@@ -196,7 +196,7 @@
                      </div>
                     </div>
                   </div>
-                  <a button class="btn btn-outline-primary btn-large" href="" id="saveRabBtn">Save</a>
+                  <button type="button" class="btn btn-outline-primary btn-large" href="" id="saveRabBtn">Save</a>
                 </div>
           </p>
           <br>
@@ -209,6 +209,24 @@
       </div>
       <br>
 
+    <div class="modal fade" id="saveModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Save</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Please <a href="login.html" class="accBtn">login to your account</a> or <a href="signUp.html" class="accBtn">sign up</a> to use this feature.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         </div>
+       </div>
+      </div>
+    </div>
     </center>
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/tether.min.js"></script>

@@ -1,4 +1,19 @@
 $(document).ready(function() {
+
+ $('#contactModalArt').bind('show',function() {
+    console.log("HELLO");
+    var loggedIn = localStorage.getItem('loggedIn');
+    if (loggedIn) {
+      var userName = localStorage.getItem("userFirst") + "" + localStorage.getItem("userLast");
+      var userEmail = localStorage.getItem("userEmail");
+      $("#nameArt").val(userName);
+      $("#emailArt").val(userEmail);
+    }
+  });
+
+
+
+
   $('#submitArtBtn').click(function() {
     if (!validateArtForm()) {
       event.preventDefault();
@@ -32,46 +47,61 @@ $(document).ready(function() {
     }
   });
 
-  $('#saveArtBtn').click(function() {
-    for (var i = 1; i < 6; i++) {
-      var savedItem = localStorage.getItem("title" + i.toString());  
-      if (!savedItem) {
-          localStorage.setItem("title" + i.toString(), "Art Program for Homeless Teens/ Youths Thursday Afternoons");
-          localStorage.setItem("img" + i.toString(), "images/art.jpg");
-          localStorage.setItem("more" + i.toString(), "list/art.html");
-          localStorage.setItem("cont" + i.toString(), "cont/artCont.html");
-          $('#saveArtBtn').prop('disabled', true);
-          break;
+  $('#saveArtBtn').click(function() { 
+    if (!loggedIn)
+      $('#saveModal').modal("show");
+    else {
+      for (var i = 1; i < 6; i++) {
+        var savedItem = localStorage.getItem("title" + i.toString());  
+        if (!savedItem) {
+            localStorage.setItem("title" + i.toString(), "Art Program for Homeless Teens/ Youths Thursday Afternoons");
+            localStorage.setItem("img" + i.toString(), "images/art.jpg");
+            localStorage.setItem("more" + i.toString(), "list/art.html");
+            localStorage.setItem("cont" + i.toString(), "cont/artCont.html");
+            $("#saveArtBtn").text("Saved");
+            break;
+        }
       }
     }
+    $("#saveArtBtn").prop("disabled",true);
   });
 
   $('#saveCatBtn').click(function() {
-    for (var i = 1; i < 6; i++) {
-      var savedItem = localStorage.getItem("title" + i.toString());
-      if (!savedItem) {
-        localStorage.setItem("title" + i.toString(), "Cat Shelter Care");
-        localStorage.setItem("img" + i.toString(), "images/cat.png");
-        localStorage.setItem("more" + i.toString(), "list/cat.html");
-        localStorage.setItem("cont" + i.toString(), "cont/catCont.html");
-        $('#saveCatBtn').prop('disabled', true);
-        break;
+    if (!loggedIn)
+      $('#saveModal').modal("show");
+    else {
+      for (var i = 1; i < 6; i++) {
+        var savedItem = localStorage.getItem("title" + i.toString());
+        if (!savedItem) {
+          localStorage.setItem("title" + i.toString(), "Cat Shelter Care");
+          localStorage.setItem("img" + i.toString(), "images/cat.png");
+          localStorage.setItem("more" + i.toString(), "list/cat.html");
+          localStorage.setItem("cont" + i.toString(), "cont/catCont.html");
+          $("#saveCatBtn").text("Saved");
+          break;
+        }
       }
     }
+    $("#saveCatBtn").prop("disabled",true);
   });
 
   $('#saveRabBtn').click(function() {
-    for (var i = 1; i < 6; i++) {
-      var savedItem = localStorage.getItem("title" + i.toString());
-      if (!savedItem) {
-        localStorage.setItem("title" + i.toString(), "Adoption Event Coordinator - Offsite Events");
-        localStorage.setItem("img" + i.toString(), "images/solid-silver-gray-fabric_medium.jpg");
-        localStorage.setItem("more" + i.toString(), "list/rabbit.html");
-        localStorage.setItem("cont" + i.toString(), "cont/rabbitCont.html");
-        $('#saveRabBtn').prop('disabled', true);
-        break;
+    if (!loggedIn)
+      $('#saveModal').modal("show");
+    else {
+      for (var i = 1; i < 6; i++) {
+        var savedItem = localStorage.getItem("title" + i.toString());
+        if (!savedItem) {
+          localStorage.setItem("title" + i.toString(), "Adoption Event Coordinator - Offsite Events");
+          localStorage.setItem("img" + i.toString(), "images/rabbit.jpg");
+          localStorage.setItem("more" + i.toString(), "list/rabbit.html");
+          localStorage.setItem("cont" + i.toString(), "cont/rabbitCont.html");
+          $("#saveRabBtn").text("Saved");
+          break;
+        }
       }
     }
+    $("#saveRabBtn").prop("disabled",true);
   });
 
   $('#nameArt').change(function() {
@@ -244,5 +274,4 @@ $(document).ready(function() {
     var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return emailRegex.test(email);
   }
-
 });
