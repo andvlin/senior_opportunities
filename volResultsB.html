@@ -2,6 +2,32 @@
 
 <html>
   <head>
+
+    <!-- Google Analytics Content Experiment code -->
+    <script>function utmx_section(){}function utmx(){}(function(){var
+      k='164782037-0',d=document,l=d.location,c=d.cookie;
+      if(l.search.indexOf('utm_expid='+k)>0)return;
+      function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
+        indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
+          length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
+            '<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
+            '://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
+            '&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
+            valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+            '" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
+          </script><script>utmx('url','A/B');</script>
+          <!-- End of Google Analytics Content Experiment code -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109872814-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-109872814-1');
+    </script>
+
     <meta charset="utf-8">
     <title>Volunteer Opportunities</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
@@ -60,7 +86,7 @@
                         <div class="modal-body">
                           <form class="w3-container" id="contactFormArt" href="../sub/artSub.html">
                           <label><b> Name</b></label>
-                          <p hidden class="errText" id="nameHelp">Please enter your name.</p> 
+                          <p hidden class="errText" id="nameHelp">Please enter your name.</p>
                           <input class="w3-input w3-border w3-light-grey" type="text" id="nameArt">
                           <br>
                           <label><b>Email</b></label>
@@ -68,7 +94,7 @@
                           <input class="w3-input w3-border w3-light-grey" type="text" id="emailArt">
                           <br>
                           <label><b>Phone-Number</b></label>
-                          <p hidden class="errText" id="numHelp">Please enter a valid 10-digit phone number (digits only).</p> 
+                          <p hidden class="errText" id="numHelp">Please enter a valid 10-digit phone number (digits only).</p>
                           <input class="w3-input w3-border w3-light-grey" type="text" maxlength="10" minlength="10" id="phoneArt">
                           <br>
                           <label><b>Message</b></label>
@@ -116,7 +142,7 @@
                         <div class="modal-body">
                           <form class="w3-container" id="contactFormCat" href="../sub/catSub.html">
                           <label><b> Name</b></label>
-                          <p hidden class="errText" id="nameHelp">Please enter your name.</p> 
+                          <p hidden class="errText" id="nameHelp">Please enter your name.</p>
                           <input class="w3-input w3-border w3-light-grey" type="text" id="nameCat">
                           <br>
                           <label><b>Email</b></label>
@@ -124,7 +150,7 @@
                           <input class="w3-input w3-border w3-light-grey" type="text" id="emailCat">
                           <br>
                           <label><b>Phone-Number</b></label>
-                          <p hidden class="errText" id="numHelp">Please enter a valid 10-digit phone number (digits only).</p> 
+                          <p hidden class="errText" id="numHelp">Please enter a valid 10-digit phone number (digits only).</p>
                           <input class="w3-input w3-border w3-light-grey" type="text" maxlength="10" minlength="10" id="phoneCat">
                           <br>
                           <label><b>Message</b></label>
@@ -173,15 +199,15 @@
                         <div class="modal-body">
                           <form class="w3-container" id="contactFormRab" href="../sub/rabSub.html">
                           <label><b> Name</b></label>
-                          <p hidden class="errText" id="nameHelp">Please enter your name.</p> 
+                          <p hidden class="errText" id="nameHelp">Please enter your name.</p>
                           <input class="w3-input w3-border w3-light-grey" type="text" id="nameRab">
                           <br>
                           <label><b>Email</b></label>
-                          <p hidden class="errText" id="emailHelp">Please enter a valid email.</p> 
+                          <p hidden class="errText" id="emailHelp">Please enter a valid email.</p>
                           <input class="w3-input w3-border w3-light-grey" type="text" id="emailRab">
                           <br>
                           <label><b>Phone-Number</b></label>
-                          <p hidden class="errText" id="numHelp">Please enter a valid 10-digit phone number (digits only).</p> 
+                          <p hidden class="errText" id="numHelp">Please enter a valid 10-digit phone number (digits only).</p>
                           <input class="w3-input w3-border w3-light-grey" type="text" maxlength="10" minlength="10" id="phoneRab">
                           <br>
                           <label><b>Message</b></label>
