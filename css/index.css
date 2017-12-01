@@ -90,9 +90,9 @@ body {
 }
 
 .employerContainer {
-	margin-top: 8%;
+  margin-top: 3%;
   text-align: center;
-  margin-bottom: 5%;
+
 }
 
 #savedBtn {
@@ -141,7 +141,7 @@ body {
 
 
 #employerBtn {
-	padding: 25px 25px;
+	padding: 25px 15px;
   background-color: #00da9e;
 }
 
