@@ -34,6 +34,7 @@
     <link rel="stylesheet" type="text/css" href="css/contact.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="css/volResults.css">
+    <link rel="stylesheet" type="text/css" href="css/volInfo.css">
   </head>
 
   <body>
@@ -71,7 +72,69 @@
              to the Streets (TATS) program.
               <!--More Info -->
                 <div class="button">
-                  <a button class="btn btn-outline-primary btn-large" href="list/art.html">More Info</a>
+                  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#moreModalArt" id="moreArtBtn">More Info</button>
+                  <div class="modal fade" id="moreModalArt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">More Info</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <!--JCarousel Modified
+                            Source Code: https://github.com/jsor/jcarousel/tree/master/examples/basic-->
+                            <div class="jcarousel-wrapper">
+                              <div class="jcarousel">
+                                <ul>
+                                  <li><img src="images/cute cat 1.jpg" width="600" height="400" alt=""></li>
+                                  <li><img src="images/cute cat 2.jpg" width="600" height="400" alt=""></li>
+                                  <li><img src="https://colonyofcommodus.files.wordpress.com/2012/07/1341619539905.jpg" width="600" height="400" alt=""></li>
+                                  <li><img src="images/cute cat 3.jpg" width="600" height="400" alt=""></li>
+                                  <li><img src="images/cute cat 4.jpg" width="600" height="400" alt=""></li>
+                                  <li><img src="images/cute cat 5.jpg" width="600" height="400" alt=""></li>
+                                </ul>
+                              </div>
+
+                              <p class="photo-credits">
+                                Photos by <a href="https://unsplash.com/@paul_">Paul on Unsplash</a>
+                              </p>
+
+                              <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                              <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+                              <p class="jcarousel-pagination">
+
+                              </p>
+                            </div>
+                            <hr/>
+                            <div class= "w3-card w3-dark-gray w3-round w3-padding-large" style="max-width:800px">
+                              <h2>Doors of Change</h2>
+                              <h6>DoorsofChange@gmail.com
+                                <br>9400 Gilman Avenue, La Jolla 92122, CA</h6>
+                              <p>
+                                Doors of Change is a nonprofit organization that services and supports homeless youths ages 12-24.
+                                We offer a safe and supportive environment to come and create art through our weekly Thursday Taking Art to
+                                the Streets (TATS) program. TATS facilitates healing and empowerment through the creation of art. www.doorsofchange.org.
+
+                                <br>
+                                Volunteers are needed to help set up and assist with our Art lessons from 3:00 pm to 5:00 pm at the Episcopal Church
+                                in Ocean Beach and then assist with dinner from 5:00 pm to 6:00 pm. Interaction with the youth is encouraged.
+
+                                <br>
+                                Ideally we are looking for volunteers that can commit to one Thursday each month.
+                                Please contact Shawn Cross the Program Manager.
+
+                              </p>
+                            </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                       </div>
+                     </div>
+                    </div>
+                  </div>
                 <!--Contact -->
                   <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#contactModalArt" id="contArtBtn">Contact Organization</button>
                   <div class="modal fade" id="contactModalArt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -93,11 +156,11 @@
                           <p hidden class="errText" id="emailHelp">Please enter a valid email.</p>
                           <input class="w3-input w3-border w3-light-grey" type="text" id="emailArt">
                           <br>
-                          <label><b>Phone-Number</b></label>
-                          <p hidden class="errText" id="numHelp">Please enter a valid 10-digit phone number (digits only).</p>
+                          <label><b>Phone Number</b></label>
+                          <p hidden class="errText" id="phoneHelp">Please enter a valid 10-digit phone number (digits only).</p>
                           <input class="w3-input w3-border w3-light-grey" type="text" maxlength="10" minlength="10" id="phoneArt">
                           <br>
-                          <label><b>Message</b></label>
+                          <label><b>Message</b> (optional)</label>
                           <textarea class="w3-input w3-border w3-light-grey" type="text" style="resize:none"></textarea>
                           <br>
                         </form>
@@ -127,9 +190,73 @@
                 for cats as they prep themselves up for a permanent home.
               <!--More Info -->
                 <div class="button">
-                  <a button class="btn btn-outline-primary btn-large" href="list/cat.html">More Info</a>
+                  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#moreModalCat" id="moreCatBtn">More Info</button>
+                  <div class="modal fade" id="moreModalCat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">More Info</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <!--JCarousel Modified
+                            Source Code: https://github.com/jsor/jcarousel/tree/master/examples/basic-->
+                            <div class="jcarousel-wrapper">
+                              <div class="jcarousel">
+                                <ul>
+                                  <li><img src="images/cute cat 1.jpg" width="600" height="400" alt=""></li>
+                                  <li><img src="images/cute cat 2.jpg" width="600" height="400" alt=""></li>
+                                  <li><img src="https://colonyofcommodus.files.wordpress.com/2012/07/1341619539905.jpg" width="600" height="400" alt=""></li>
+                                  <li><img src="images/cute cat 3.jpg" width="600" height="400" alt=""></li>
+                                  <li><img src="images/cute cat 4.jpg" width="600" height="400" alt=""></li>
+                                  <li><img src="images/cute cat 5.jpg" width="600" height="400" alt=""></li>
+                                </ul>
+                              </div>
+
+                              <p class="photo-credits">
+                                Photos by <a href="https://unsplash.com/@paul_">Paul on Unsplash</a>
+                              </p>
+
+                              <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                              <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+                              <p class="jcarousel-pagination">
+
+                              </p>
+                            </div>
+                            <hr/>
+                            <div class= "w3-card w3-dark-gray w3-round w3-padding-large" style="max-width:800px">
+                              <h2>Humane Pet Society</h2>
+                              <h6>humanpetsociety@gmail.com
+                                <br>9400 Gilman Avenue, La Jolla 92122, CA</h6>
+                              <p>
+                                Do you like cats? Do you have time to help out friends in need? If so, we have an opportunity for you!
+                                Come to the Humane Pet Society to help out furry friends in need. We are looking for someone who can care
+                                for cats as they prep themselves up for a permanent home. Prefer someone with experience handling pets.
+                                <br>
+                                <u>Expected Work</u>
+                                <br>
+                                <ul>
+                                <li>Assist with feeding, cleaning, and in-kennel enrichment.</li>
+                                <li>Shifts available Mon-Fri between 7:30am-6pm. </li>
+                                <li>Minimum commitment is one shift every other week.</li>
+                                <li>Shifts typically run 2 to 3 hours in length.</li>
+                                </ul>
+                                <br>
+
+                              </p>
+                            </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                       </div>
+                     </div>
+                    </div>
+                  </div>
                 <!--Contact -->
-                  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#contactModalCat">Contact Organization</button>
+                  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#contactModalCat" id="contCatBtn">Contact Organization</button>
                   <div class="modal fade" id="contactModalCat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
@@ -149,11 +276,11 @@
                           <p hidden class="errText" id="emailHelp">Please enter a valid email.</p>
                           <input class="w3-input w3-border w3-light-grey" type="text" id="emailCat">
                           <br>
-                          <label><b>Phone-Number</b></label>
-                          <p hidden class="errText" id="numHelp">Please enter a valid 10-digit phone number (digits only).</p>
+                          <label><b>Phone Number</b></label>
+                          <p hidden class="errText" id="phoneHelp">Please enter a valid 10-digit phone number (digits only).</p>
                           <input class="w3-input w3-border w3-light-grey" type="text" maxlength="10" minlength="10" id="phoneCat">
                           <br>
-                          <label><b>Message</b></label>
+                          <label><b>Message</b> (optional)</label>
                           <textarea class="w3-input w3-border w3-light-grey" type="text" style="resize:none"></textarea>
                           <br>
                         </form>
@@ -184,9 +311,65 @@
              events at pet stores and other locations (book stores, shopping centers, libraries, etc.).
               <!--More Info -->
                 <div class="button">
-                  <a button class="btn btn-outline-primary btn-large" href="list/rabbit.html">More Info</a>
+                  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#moreModalRab" id="moreRabBtn">More Info</button>
+                  <div class="modal fade" id="moreModalRab" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">More Info</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <!--JCarousel Modified
+                            Source Code: https://github.com/jsor/jcarousel/tree/master/examples/basic-->
+                            <<div class="jcarousel-wrapper">
+                              <div class="jcarousel">
+                                <ul>
+                                  <li><img src="images/cute cat 1.jpg" width="600" height="400" alt=""></li>
+                                  <li><img src="images/cute cat 2.jpg" width="600" height="400" alt=""></li>
+                                  <li><img src="https://colonyofcommodus.files.wordpress.com/2012/07/1341619539905.jpg" width="600" height="400" alt=""></li>
+                                  <li><img src="images/cute cat 3.jpg" width="600" height="400" alt=""></li>
+                                  <li><img src="images/cute cat 4.jpg" width="600" height="400" alt=""></li>
+                                  <li><img src="images/cute cat 5.jpg" width="600" height="400" alt=""></li>
+                                </ul>
+                              </div>
+
+                              <p class="photo-credits">
+                                Photos by <a href="https://unsplash.com/@paul_">Paul on Unsplash</a>
+                              </p>
+
+                              <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                              <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+                              <p class="jcarousel-pagination">
+
+                              </p>
+                            </div>
+                            <hr/>
+                            <div class= "w3-card w3-dark-gray w3-round w3-padding-large" style="max-width:800px">
+                              <h2>San Diego House Rabbit Society</h2>
+                              <h6>SDHRabbitSociety@gmail.com
+                                <br>9400 Gilman Avenue, La Jolla 92122, CA</h6>
+                              <p>
+                                Volunteer for Escondido Humane Society with adoptable rabbits in the PETCO adoption program.
+                                Volunteering with the rabbits includes cleaning two rabbit cages, changing litterboxes, feeding,
+                                exercising and socializing up to three rabbits and talk to the people shopping at Petco about rabbit care.
+                                Training and educational materials are provided. Requires approx. 2 hours per day and a long term commitment
+                                of one or more days per week. You can go any time the store is open. Five locations available: Poway, Carmel Mtn Ranch, Escondido, San Marcos and Mission Gorge (Friars Rd).
+                                <br>
+                              </p>
+                            </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                       </div>
+                     </div>
+                    </div>
+                  </div>
                 <!--Contact -->
-                  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#contactModalRab">Contact Organization</button>
+                  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#contactModalRab" id="contRabBtn">Contact Organization</button>
                   <div class="modal fade" id="contactModalRab" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
@@ -206,11 +389,11 @@
                           <p hidden class="errText" id="emailHelp">Please enter a valid email.</p>
                           <input class="w3-input w3-border w3-light-grey" type="text" id="emailRab">
                           <br>
-                          <label><b>Phone-Number</b></label>
-                          <p hidden class="errText" id="numHelp">Please enter a valid 10-digit phone number (digits only).</p>
+                          <label><b>Phone Number</b></label>
+                          <p hidden class="errText" id="phoneHelp">Please enter a valid 10-digit phone number (digits only).</p>
                           <input class="w3-input w3-border w3-light-grey" type="text" maxlength="10" minlength="10" id="phoneRab">
                           <br>
-                          <label><b>Message</b></label>
+                          <label><b>Message</b> (optional)</label>
                           <textarea class="w3-input w3-border w3-light-grey" type="text" style="resize:none"></textarea>
                           <br>
                         </form>
@@ -258,6 +441,8 @@
   <script type="text/javascript" src="js/tether.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/volResults.js"></script>
+  <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+  <script type="text/javascript" src="js/moreInfo.js"></script>
 
 </body>
 </html>

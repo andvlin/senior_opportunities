@@ -1,25 +1,63 @@
 $(document).ready(function() {
-
- $('#contactModalArt').bind('show',function() {
-    console.log("HELLO");
-    var loggedIn = localStorage.getItem('loggedIn');
+  
+  $(document).on("click", "#contArtBtn", function () {
+    var loggedIn = localStorage.getItem("loggedIn");
     if (loggedIn) {
-      var userName = localStorage.getItem("userFirst") + "" + localStorage.getItem("userLast");
-      var userEmail = localStorage.getItem("userEmail");
-      $("#nameArt").val(userName);
-      $("#emailArt").val(userEmail);
+      var userName = "";
+      var userEmail = "";
+      if (localStorage.getItem('userFirst') != null)
+        userName = localStorage.getItem('userFirst');
+      if (localStorage.getItem('userLast') != null)
+        userName += (" " + localStorage.getItem('userLast'));
+      if (localStorage.getItem('userEmail') != null)
+        userEmail = localStorage.getItem('userEmail');
+      $(".modal-body #nameArt").val(userName);
+      $(".modal-body #emailArt").val(userEmail);
     }
   });
 
+  $(document).on("click", "#contCatBtn", function () {
+    var loggedIn = localStorage.getItem("loggedIn");
+    if (loggedIn) {
+      var userName = "";
+      var userEmail = "";
+      if (localStorage.getItem('userFirst') != null)
+        userName = localStorage.getItem('userFirst');
+      if (localStorage.getItem('userLast') != null)
+        userName += (" " + localStorage.getItem('userLast'));
+      if (localStorage.getItem('userEmail') != null)
+        userEmail = localStorage.getItem('userEmail');
+      $(".modal-body #nameCat").val(userName);
+      $(".modal-body #emailCat").val(userEmail);
+    }
+  });
 
-
-
+  $(document).on("click", "#contRabBtn", function () {
+    var loggedIn = localStorage.getItem("loggedIn");
+    if (loggedIn) {
+      var userName = "";
+      var userEmail = "";
+      if (localStorage.getItem('userFirst') != null)
+        userName = localStorage.getItem('userFirst');
+      if (localStorage.getItem('userLast') != null)
+        userName += (" " + localStorage.getItem('userLast'));
+      if (localStorage.getItem('userEmail') != null)
+        userEmail = localStorage.getItem('userEmail');
+      $(".modal-body #nameRab").val(userName);
+      $(".modal-body #emailRab").val(userEmail);
+    }
+  });
+  
   $('#submitArtBtn').click(function() {
     if (!validateArtForm()) {
       event.preventDefault();
       event.stopPropagation();
     }
     else {
+      if (localStorage.getItem('userFirst') == null)
+        localStorage.setItem('userFirst', $("#nameArt").val());
+      if (localStorage.getItem('userEmail') == null)
+        localStorage.setItem('userEmail', $('#emailArt').val());
       $('#contactFormArt').submit();
       location.href = "sub/artSub.html";
     }
@@ -31,6 +69,10 @@ $(document).ready(function() {
       event.stopPropagation();
     }
     else {
+      if (localStorage.getItem('userFirst') == null)
+        localStorage.setItem('userFirst', $("#nameCat").val());
+      if (localStorage.getItem('userEmail') == null)
+        localStorage.setItem('userEmail', $('#emailCat').val());
       $('#contactFormCat').submit();
       location.href = "sub/catSub.html";
     }
@@ -42,12 +84,17 @@ $(document).ready(function() {
       event.stopPropagation();
     }
     else {
+      if (localStorage.getItem('userFirst') == null)
+        localStorage.setItem('userFirst', $("#nameRab").val());
+      if (localStorage.getItem('userEmail') == null)
+        localStorage.setItem('userEmail', $('#emailRab').val());
       $('#contactFormRab').submit();
       location.href = "sub/rabSub.html";
     }
   });
 
-  $('#saveArtBtn').click(function() { 
+  $('#saveArtBtn').click(function() {
+    var loggedIn = localStorage.getItem('loggedIn');
     if (!loggedIn)
       $('#saveModal').modal("show");
     else {
@@ -67,6 +114,7 @@ $(document).ready(function() {
   });
 
   $('#saveCatBtn').click(function() {
+    var loggedIn = localStorage.getItem('loggedIn');
     if (!loggedIn)
       $('#saveModal').modal("show");
     else {
@@ -86,6 +134,7 @@ $(document).ready(function() {
   });
 
   $('#saveRabBtn').click(function() {
+    var loggedIn = localStorage.getItem('loggedIn');
     if (!loggedIn)
       $('#saveModal').modal("show");
     else {
@@ -125,11 +174,11 @@ $(document).ready(function() {
   $('#phoneArt').change(function() {
     var userPhone = $('#phoneArt').val();
     if (isNaN(parseInt(userPhone)) || userPhone.length != 10) {
-      $('#numHelp').show();
-      $('#numHelp').removeAttr("hidden");
+      $('#phoneHelp').show();
+      $('#phoneHelp').removeAttr("hidden");
     }
     else
-      $('#numHelp').hide();
+      $('#phoneHelp').hide();
   });
 
   $('#nameCat').change(function() {
@@ -153,11 +202,11 @@ $(document).ready(function() {
   $('#phoneCat').change(function() {
     var userPhone = $('#phoneCat').va();
     if (isNaN(parseInt(userPhone)) || userPhone.length != 10) {
-      $('#numHelp').show();
-      $('#numHelp').removeAttr("hidden");
+      $('#phoneHelp').show();
+      $('#phoneHelp').removeAttr("hidden");
     }
     else
-      $('#numHelp').hide();
+      $('#phoneHelp').hide();
   });
 
   $('#nameRab').change(function() {
@@ -181,23 +230,23 @@ $(document).ready(function() {
   $('#phoneRab').change(function() {
     var userPhone = $('#phoneRab').va();
     if (isNaN(parseInt(userPhone)) || userPhone.length != 10) {
-      $('#numHelp').show();
-      $('#numHelp').removeAttr("hidden");
+      $('#phoneHelp').show();
+      $('#phoneHelp').removeAttr("hidden");
     }
     else
-      $('#numHelp').hide();
+      $('#phoneHelp').hide();
   });
 
   function validateArtForm() {
     var isValidName = ($('#nameArt').val() != '');
     var validEmail = isValidEmail('#emailArt');
     var userPhone = $('#phoneArt').val()
-    var isValidNum = (!isNaN(parseInt(userPhone)) && userPhone.length == 10);
+    var isValidPhone = (!isNaN(parseInt(userPhone)) && userPhone.length == 10);
 
-    if (!isValidNum) {
-      $('#numHelp').show();
-      $('#numHelp').removeAttr("hidden");
-      $('#numHelp').focus();
+    if (!isValidPhone) {
+      $('#phoneHelp').show();
+      $('#phoneHelp').removeAttr("hidden");
+      $('#phoneHelp').focus();
     }
 
     if (!validEmail) {
@@ -212,19 +261,19 @@ $(document).ready(function() {
       $('#name').focus();
     }
 
-    return (isValidName && validEmail && isValidNum);
+    return (isValidName && validEmail && isValidPhone);
   }
 
   function validateCatForm() {
     var isValidName = ($('#nameCat').val() != '');
     var validEmail = isValidEmail('#emailCat');
     var userPhone = $('#phoneCat').val();
-    var isValidNum = (!isNaN(parseInt(userPhone)) && userPhone.length == 10);
+    var isValidPhone = (!isNaN(parseInt(userPhone)) && userPhone.length == 10);
 
-    if (!isValidNum) {
-      $('#numHelp').show();
-      $('#numHelp').removeAttr("hidden");
-      $('#numHelp').focus();
+    if (!isValidPhone) {
+      $('#phoneHelp').show();
+      $('#phoneHelp').removeAttr("hidden");
+      $('#phoneHelp').focus();
     }
 
     if (!validEmail) {
@@ -239,19 +288,19 @@ $(document).ready(function() {
       $('#name').focus();
     }
 
-    return (isValidName && validEmail && isValidNum);
+    return (isValidName && validEmail && isValidPhone);
   }
 
   function validateRabForm() {
     var isValidName = ($('#nameRab').val() != '');
     var validEmail = isValidEmail('#emailRab');
     var userPhone = $('#phoneRab').val();
-    var isValidNum = (!isNaN(parseInt(userPhone)) && userPhone.length == 10);
+    var isValidPhone = (!isNaN(parseInt(userPhone)) && userPhone.length == 10);
 
-    if (!isValidNum) {
-      $('#numHelp').show();
-      $('#numHelp').removeAttr("hidden");
-      $('#numHelp').focus();
+    if (!isValidPhone) {
+      $('#phoneHelp').show();
+      $('#phoneHelp').removeAttr("hidden");
+      $('#phoneHelp').focus();
     }
 
     if (!validEmail) {
@@ -266,7 +315,7 @@ $(document).ready(function() {
       $('#name').focus();
     }
 
-    return (isValidName && validEmail && isValidNum);
+    return (isValidName && validEmail && isValidPhone);
   }
 
   function isValidEmail(userEmail) {

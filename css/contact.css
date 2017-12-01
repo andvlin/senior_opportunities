@@ -1,3 +1,8 @@
+.errText {
+  color: #FF8F8E;
+  font-size: 15px;
+}
+
 .header {
   background: rgb(238, 180, 34);
   font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
@@ -16,10 +21,10 @@
 }
 
 /*different color scheme for volunterring contact*/
-#vol, #volHeader {
+#submitBtn, #volHeader {
   background:  rgb(72, 118, 255);
 }
-#vol:hover{
+#submitBtn:hover{
   background: black;
 }
 

@@ -1,3 +1,9 @@
+@media (min-width: 992px) {
+  .modal-lg {
+    width: 1200px;
+  }
+}
+
 .errText {
   color: #FF8F8E;
   font-size: 15px;

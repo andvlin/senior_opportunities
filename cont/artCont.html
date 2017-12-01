@@ -26,25 +26,28 @@
         <br>
       </div>
       <hr/>
-
       <!--Form and Message Input-->
+      <p hidden id="subLink">../sub/artSub.html</p>
       <div class="w3-container w3-dark-gray" style="max-width:500px">
         <h4>Fill out your information to message the organizers!</h2>
       <br>
-      <form class="w3-container">
-        <label><b> Name</b></label>
-        <input class="w3-input w3-border w3-light-grey" type="text">
+      <form class="w3-container" id="contForm">
+        <label><b>Name</b></label>
+        <p hidden class="errText" id="nameHelp">Please enter your name.</p>
+        <input class="w3-input w3-border w3-light-grey" type="text" id="name">
         <br>
 
         <label><b>Email</b></label>
-        <input class="w3-input w3-border w3-light-grey" type="text">
+        <p hidden class="errText" id="emailHelp">Please enter a valid email.</p>
+        <input class="w3-input w3-border w3-light-grey" type="text" id="email">
         <br>
 
-        <label><b>Phone-Number</b></label>
-        <input class="w3-input w3-border w3-light-grey" type="text">
+        <label><b>Phone Number</b></label>
+        <p hidden class="errText" id="phoneHelp">Please enter a valid 10-digit phone number (digits only).</p>
+        <input class="w3-input w3-border w3-light-grey" type="text" maxlength="10" minlength="10" id="phone">
         <br>
 
-        <label><b>Message</b></label>
+        <label><b>Message</b> (optional)</label>
         <textarea class="w3-input w3-border w3-light-grey" type="text" style="resize:none">
         </textarea>
         <br>
@@ -52,7 +55,7 @@
     </div>
 
       <!-- Submit Message -->
-      <a class="submit" id="vol" href="../sub/artSub.html">Submit!</a>
+      <a class="submit" id="submitBtn" href="../sub/artSub.html">Submit!</a>
       <br>
 
       <!--Back to previous Event Listing!-->
@@ -62,8 +65,8 @@
       <!--Back to previous all Listings!-->
       <a class="back" href = "../volResults.html">Back to all events</a>
       <br>
-
-
     </center>
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/cont.js"></script>
   </body>
 </html>
