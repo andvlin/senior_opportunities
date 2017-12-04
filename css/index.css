@@ -25,11 +25,11 @@ body {
 .header p {
   text-align: left;
   font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
-  color: #ffffff;
+  color: #000000;
   text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
                 0px -5px 35px rgba(255,255,255,0.3);
   letter-spacing: 2px;
-  font-size: 30px;
+  font-size:30px;
   font-weight: bold;
 }
 
@@ -43,7 +43,7 @@ body {
 	font-weight: bold;
 	font-style: normal;
 	font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
-	color: #ffffff;
+	color: #000000;
   text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
                 0px -5px 35px rgba(255,255,255,0.3);
 	letter-spacing: 2px;
