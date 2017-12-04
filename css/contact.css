@@ -10,14 +10,18 @@
 }
 
 .submit {
-  margin-top: 20px;
-  line-height: 70px;
-  padding: 10px 10px;
-  background: rgb(238, 180, 34); /*yellow*/
   font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
-  color: white;
-  border: none;
-  text-decoration: none;
+  border-radius: 3px;
+	background-color: #0099ff;
+	border: none;
+	color: white;
+	transition-duration: 0.4s;
+	padding: 15px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	width: 150px;
 }
 
 /*different color scheme for volunterring contact*/
@@ -29,14 +33,19 @@
 }
 
 .back {
-  margin-top: 20px;
-  line-height: 70px;
-  padding: 10px 10px;
-  background:  gray;
   font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
-  color: white;
-  border: none;
-  text-decoration: none;}
+  border-radius: 3px;
+	background-color: dimgray;
+	border: none;
+	color: white;
+	transition-duration: 0.4s;
+	padding: 15px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	width: 150px;
+}
 
 .submit:hover {
   background: black;
@@ -44,4 +53,8 @@
 
 .back:hover{
   background: black;
+}
+
+#event{
+  width: 175px;
 }
