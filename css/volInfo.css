@@ -12,7 +12,7 @@
   color: rgb(255, 255, 255);
 }
 
-.button {
+#listings {
   font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
   border-radius: 3px;
 	background-color: dimgray;
@@ -28,6 +28,17 @@
 }
 
 #contact{
+
+  font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+  border-radius: 3px;
+  border: none;
+  color: white;
+  transition-duration: 0.4s;
+  padding: 15px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
   background-color: #0099ff;
   width: 175px;
 }
